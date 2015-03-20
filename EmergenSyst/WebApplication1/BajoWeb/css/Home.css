@@ -1,0 +1,50 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 01-jul-2014, 1:43:32
+    Author     : Fabver12
+*/
+
+.btnEmrg{
+    width: 270px;
+    height: 270px;
+    margin: 10px auto;
+    background-image: url(images/btnEmergency1.svg);
+    background-repeat: no-repeat;
+}
+
+.btnEmrg2{
+    background-color: #5dbb44;
+    color: red;
+    background-image: url(images/icons-svg/other-user-white.svg);
+    background-position: 5px 0;
+}
+
+.ui-icon-other-user:after {
+	background-image: url(images/icons-svg/other-user-white.svg);
+}
+
+.ui-alt-icon.ui-icon-other-user:after,
+.ui-alt-icon .ui-icon-other-user:after {
+	background-image: url(images/icons-svg/other-user-black.svg);
+}
+
+.ui-nosvg .ui-icon-other-user{
+	background-image: url(images/icons-png/other-user-white.png);
+}
+
+.ui-nosvg .ui-alt-icon.ui-icon-other-user,
+.ui-nosvg .ui-alt-icon .ui-icon-other-user{
+	background-image: url(images/icons-png/other-user-black.png);
+}
+
+.ui-icon-emergency:after {
+	background-image: url(images/btnEmergency1.svg);
+}
+
+/*.ui-nosvg .ui-icon-emergency{
+	background-image: url(images/btnEmergency1.png);
+}*/

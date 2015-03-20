@@ -1,0 +1,47 @@
+﻿<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EmergenSyst</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width,user-scalable=no">
+        <link href="css/news.themes.min.css" rel="stylesheet" type="text/css" title="estilo"/>
+        <link href="css/jquery.mobile.icons.min.css" rel="stylesheet" type="text/css" title="estilo"/>
+        <link href="css/jquery.mobile-1.4.2.css" rel="stylesheet" type="text/css" title="estilo"/>
+        <link href="css/Home.css" rel="stylesheet" type="text/css" title="estilo"/>
+        <link href="css/style.css" rel="stylesheet" type="text/css" title="estilo" />
+        <script type="text/javascript" src="js/jquery-2.1.1.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile-1.4.2.js"></script>
+    </head>
+    <body>
+       <div id="saludo" data-role="page">
+               <header data-role="header" data-position="fixed" data-theme="d" data-id="header">
+                   <h1>Phonebook</h1>
+                   <div data-role="navbar">
+                    <ul>
+                        <li><a href="index.html" data-role="button" data-icon="home" data-iconpos="notext" data-transition="slideup" data-ajax="false"></a></li>
+                        <li><a href="PersonalData.html" data-role="button" data-icon="user" data-iconpos="notext" data-transition="slide" data-ajax="false"></a></li>
+                        <li><a data-role="button" data-icon="phone" data-iconpos="notext" data-theme="c" class="ui-btn-active"></a></li>
+                    </ul>
+                </div>
+               </header>
+                <div data-role="content">
+                    <h1 id="saludo" style="color: red;">Hola</h1>
+                    <button data-role="button" id="btn" onclick="cambiar(this);">Cambiar</button>
+                </div>
+            <div data-role="footer" data-position="fixed" data-theme="d" data-id="footer">
+                <div class="footer">
+                    <div class="content">
+                        <div class="info">
+                            <a href="info.html" class="btn" data-role="button" data-icon="info" data-iconpos="notext" data-transition="pop" style="height:100%; width:100%;" data-rel="dialog"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

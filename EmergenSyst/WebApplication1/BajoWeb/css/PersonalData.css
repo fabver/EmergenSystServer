@@ -1,0 +1,41 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 30-jun-2014, 14:16:17
+    Author     : Fabver12
+*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.btn{
+    width: 56px;
+    height: 56px;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.rectInter{
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    margin: 10px auto;
+}
+
+.error{
+    background: #ff9197;
+    border: 5px solid red;
+    color: chartreuse;
+}
+
+.invisible{
+    visibility: hidden;
+}
+
+.visible{
+    visibility: visible;
+}

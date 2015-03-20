@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>EmergenSyst</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no">
+    <link href="css/news.themes.min.css" rel="stylesheet" type="text/css" title="estilo" />
+    <link href="css/jquery.mobile.icons.min.css" rel="stylesheet" type="text/css" title="estilo" />
+    <link href="css/jquery.mobile-1.4.2.css" rel="stylesheet" type="text/css" title="estilo" />
+    <link href="css/PersonalData.css" rel="stylesheet" type="text/css" title="estilo" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" title="estilo" />
+    <script type="text/javascript" src="js/jquery-2.1.1.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile-1.4.2.js"></script>
+    <script type="text/javascript" src="js/Val.js"></script>
+    <script type="text/javascript" src="js/InsertClinicalData.js"></script>
+</head>
+<body>
+    <div id="ClinicalDAta" data-role="page">
+        <div data-role="header" data-position="fixed" data-theme="d" data-id="header">
+            <h1>Clinical Story</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="index.html" data-role="button" data-icon="home" data-iconpos="notext" data-transition="slide" data-ajax="false"></a></li>
+                    <li><a data-role="button" data-icon="user" data-iconpos="notext" data-theme="c" class="ui-btn-active"></a></li>
+                    <li><a href="saludo.html" data-role="button" data-icon="phone" data-iconpos="notext" data-transition="flip" data-ajax="false"></a></li>
+                </ul>
+            </div>
+            <div class="bar">
+                <div class="other" id="bar1"></div>
+                <div class="actual" id="bar2"></div>
+            </div>
+        </div>
+        <div data-role="content">
+            <form name="frmPersona" data-ajax="false">
+                <input type="number" name="ced" id="txtCed" value="" class="" placeholder="Digite su cedula" onfocus="cambiar(this);" onblur="validar(this);" data-theme="a" required />
+                <div data-role="collapsible" data-inline="true" data-collapsed="false">
+                    <h2>Datos Clínicos</h2>
+                    <div data-role="collapsible-set">
+                        <div data-role="collapsible" data-inline="true">
+                            <h2>Enfermedades</h2>
+                            <select name="bEnf" id="bEnf" data-native-menu="false" data-role="slider">
+                                <option value="false">NO</option>
+                                <option value="true">SI</option>
+                            </select>
+                            <textarea name="enfs" id="enfs" readonly></textarea>
+                        </div>
+                        <div data-role="collapsible" data-inline="true">
+                            <h2>Cirugías</h2>
+                            <select name="bCir" id="bCir" data-native-menu="false" data-role="slider">
+                                <option value="false">NO</option>
+                                <option value="true">SI</option>
+                            </select>
+                            <textarea name="cirs" id="cirs" readonly></textarea>
+                        </div>
+                        <div data-role="collapsible" data-inline="true">
+                            <h2>Medicamentos</h2>
+                            <select name="bMed" id="bMed" data-native-menu="false" data-role="slider">
+                                <option value="false">NO</option>
+                                <option value="true">SI</option>
+                            </select>
+                            <textarea name="meds" id="meds" readonly></textarea>
+                        </div>
+                        <div data-role="collapsible" data-inline="true">
+                            <h2>Alergias</h2>
+                            <select name="bAlg" id="bAlg" data-native-menu="false" data-role="slider">
+                                <option value="false">NO</option>
+                                <option value="true">SI</option>
+                            </select>
+                            <textarea name="algs" id="algs" readonly></textarea>
+                        </div>
+                        <div data-role="collapsible" data-inline="true">
+                            <h2>Antecedentes Familiares</h2>
+                            <select name="bAnt" id="bAnt" data-native-menu="false" data-role="slider">
+                                <option value="false">NO</option>
+                                <option value="true">SI</option>
+                            </select>
+                            <textarea name="ants" id="ants" readonly></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui-grid-a">
+                    <div class="ui-block-a"><input id="btnGuardar" type="submit" data-role="button" data-icon="check" value="Guardar" data-theme="c" /></div>
+                    <div class="ui-block-b"><input id="btnCancelar" type="reset" data-role="button" data-icon="delete" value="Cancelar" data-theme="e" /></div>
+                </div>
+            </form>
+        </div>
+        <div data-role="footer" data-position="fixed" data-theme="d" data-id="footer">
+            <div class="footer">
+                <div class="content">
+                    <div class="back">
+                        <a href="PersonalData.html" data-role="button" class="btn" data-icon="arrow-l" data-transition="flip" data-ajax="false">Back</a>
+                    </div>
+                    <div class="next">
+                        <a href="#" class="btn" data-role="button" data-icon="arrow-r" data-transition="flip" data-ajax="false" data-iconpos="right">Next</a>
+                    </div>
+                    <div class="info">
+                        <a href="info.html" class="btn" data-role="button" data-icon="info" data-iconpos="notext" data-transition="pop" style="height:100%; width:100%;" data-rel="dialog"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
