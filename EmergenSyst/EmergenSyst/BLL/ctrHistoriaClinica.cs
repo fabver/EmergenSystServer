@@ -12,12 +12,12 @@ namespace BLL
     {
         PersonaDAO pDAO = new PersonaDAO();
         ClinicalDataDAO cdDAO = new ClinicalDataDAO();
-        public HistoriaClinica getHistoriaClinca(string cod)
+        public string getHistoriaClinca(string cod)
         {
             HistoriaClinica hc = new HistoriaClinica();
             hc.persona = pDAO.select(cod);
             hc.datosClinicos = cdDAO.getDatosClinicos(cod);
-            return hc;
+            return Newtonsoft.Json.JsonConvert.SerializeObject(hc);
         }
     }
 }

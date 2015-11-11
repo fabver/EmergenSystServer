@@ -40,7 +40,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GeoLocation.cs" />
     <Compile Include="Tipos\Alergias.cs" />
     <Compile Include="Tipos\Antecedentes.cs" />
     <Compile Include="Tipos\Cirugias.cs" />

@@ -5,40 +5,35 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using System.Web.Http.Cors;
-using BLL;
-using Entities;
 
-namespace RestfulApi.Controllers
+namespace Restful.App_Start
 {
     [EnableCors(origins: "*", headers: "*", methods: "*")]
-    public class HistoriaClinicaController : ApiController
+    public class ValuesController1 : ApiController
     {
-        ctrHistoriaClinica ctrHC = new ctrHistoriaClinica();
-        // GET api/historiaclinica
+        // GET api/<controller>
         public IEnumerable<string> Get()
         {
             return new string[] { "value1", "value2" };
         }
 
-        // GET api/historiaclinica/5
+        // GET api/<controller>/5
         public string Get(int id)
         {
-            HistoriaClinica hc;
-            hc = ctrHC.getHistoriaClinca(Convert.ToString(id));
-            return Newtonsoft.Json.JsonConvert.SerializeObject(hc); ;
+            return "value";
         }
 
-        // POST api/historiaclinica
+        // POST api/<controller>
         public void Post([FromBody]string value)
         {
         }
 
-        // PUT api/historiaclinica/5
+        // PUT api/<controller>/5
         public void Put(int id, [FromBody]string value)
         {
         }
 
-        // DELETE api/historiaclinica/5
+        // DELETE api/<controller>/5
         public void Delete(int id)
         {
         }
